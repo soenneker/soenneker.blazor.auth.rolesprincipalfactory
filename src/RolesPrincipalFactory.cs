@@ -1,4 +1,4 @@
-﻿using System.Security.Claims;
+using System.Security.Claims;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Components.WebAssembly.Authentication;
 using Microsoft.AspNetCore.Components.WebAssembly.Authentication.Internal;
@@ -17,7 +17,7 @@ public sealed class RolesPrincipalFactory: AccountClaimsPrincipalFactory<RemoteU
 
     public override async ValueTask<ClaimsPrincipal> CreateUserAsync(RemoteUserAccount account, RemoteAuthenticationUserOptions options)
     {
-        ClaimsPrincipal user = await base.CreateUserAsync(account, options).NoSync();
+        ClaimsPrincipal user = await base.CreateUserAsync(account, options);
 
         user.Identity.AddRolesFromJobTitle();
 
