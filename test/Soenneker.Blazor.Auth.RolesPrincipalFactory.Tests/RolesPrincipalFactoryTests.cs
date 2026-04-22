@@ -1,17 +1,16 @@
-using Soenneker.Tests.FixturedUnit;
-using Xunit;
+using Soenneker.Tests.HostedUnit;
 
 namespace Soenneker.Blazor.Auth.RolesPrincipalFactory.Tests;
 
-[Collection("Collection")]
-public class RolesPrincipalFactoryTests : FixturedUnitTest
+[ClassDataSource<Host>(Shared = SharedType.PerTestSession)]
+public class RolesPrincipalFactoryTests : HostedUnitTest
 {
 
-    public RolesPrincipalFactoryTests(Fixture fixture, ITestOutputHelper output) : base(fixture, output)
+    public RolesPrincipalFactoryTests(Host host) : base(host)
     {
     }
 
-    [Fact]
+    [Test]
     public void Default()
     {
 
