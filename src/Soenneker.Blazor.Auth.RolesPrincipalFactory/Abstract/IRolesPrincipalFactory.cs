@@ -1,7 +1,7 @@
 namespace Soenneker.Blazor.Auth.RolesPrincipalFactory.Abstract;
 
 /// <summary>
-/// Customizes Blazor WebAssembly authentication by extending AccountClaimsPrincipalFactory to add user roles based on their job title.
+/// Marks the account principal factory that splits the <c>jobTitle</c> claim on commas and adds each nonblank value as a standard <see cref="System.Security.Claims.ClaimTypes.Role"/> claim.
 /// </summary>
 public interface IRolesPrincipalFactory
 {
