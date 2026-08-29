@@ -3,11 +3,16 @@
 [![](https://img.shields.io/nuget/dt/soenneker.blazor.auth.rolesprincipalfactory.svg?style=for-the-badge)](https://www.nuget.org/packages/soenneker.blazor.auth.rolesprincipalfactory/)
 [![](https://img.shields.io/github/actions/workflow/status/soenneker/soenneker.blazor.auth.rolesprincipalfactory/codeql.yml?label=CodeQL&style=for-the-badge)](https://github.com/soenneker/soenneker.blazor.auth.rolesprincipalfactory/actions/workflows/codeql.yml)
 
-# ![](https://user-images.githubusercontent.com/4441470/224455560-91ed3ee7-f510-4041-a8d2-3fc093025112.png) Soenneker.Blazor.Auth.RolesPrincipalFactory
-### Customizes Blazor WebAssembly authentication by extending AccountClaimsPrincipalFactory to add user roles based on their job title.
+# Soenneker.Blazor.Auth.RolesPrincipalFactory
 
-## Installation
+Customizes Blazor WebAssembly authentication by extending AccountClaimsPrincipalFactory to add user roles based on their job title.
 
-```
+## Install
+
+```bash
 dotnet add package Soenneker.Blazor.Auth.RolesPrincipalFactory
 ```
+
+## What you get
+
+- `IRolesPrincipalFactory` — Customizes Blazor WebAssembly authentication by extending AccountClaimsPrincipalFactory to add user roles based on their job title.
